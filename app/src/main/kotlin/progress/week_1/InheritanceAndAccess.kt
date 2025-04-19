@@ -1,4 +1,4 @@
-package org.example.app.week_1
+package org.example.app.progress.week_1
 
 
 open class Person(val name: String) {
