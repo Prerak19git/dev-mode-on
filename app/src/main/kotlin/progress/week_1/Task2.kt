@@ -20,6 +20,7 @@ enum class Status {
     Done;
 
     companion object {
+
         fun Status.toResult(): Result =
             when (this) {
                 Pending -> Result.Empty
