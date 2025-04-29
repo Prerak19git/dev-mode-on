@@ -1,6 +1,6 @@
 
 
-package org.example.app.progress.week_1
+package org.example.app.week_1.progess
 
  data class CityUser(val name: String, val age: Int, val city: String)
 

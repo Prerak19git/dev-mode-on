@@ -1,4 +1,4 @@
-package org.example.app.progress.week_1
+package org.example.app.week_1.progess
 
 data class User(val name: String, val age: Int)
 

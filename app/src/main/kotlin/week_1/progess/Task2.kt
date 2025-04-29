@@ -1,6 +1,6 @@
-package org.example.app.progress.week_1
+package org.example.app.week_1.progess
 
-import org.example.app.progress.week_1.Status.Companion.toResult
+import org.example.app.week_1.progess.Status.Companion.toResult
 
 typealias Data = String
 

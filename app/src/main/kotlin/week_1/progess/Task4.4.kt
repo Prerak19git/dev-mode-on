@@ -1,7 +1,8 @@
-package org.example.app.progress.week_1
+package org.example.app.week_1.progess
 
 
 fun getAdultsNamesGroupedByCity(users: List<CityUser>): Map<String, String> {
+
 
     return users.groupBy {
         it.city
