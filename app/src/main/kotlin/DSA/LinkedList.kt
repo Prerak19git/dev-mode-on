@@ -1,16 +1,19 @@
 package org.example.app.DSA
 
-class Node(val value: Int?) {
+class Node(val value: Int) {
     var next: Node? = null
 }
 
 class SingleLinkedList {
+    var size: Int = 0
     var head: Node? = null
 
-    fun addFirst(value: Int?) {
+    fun addFirst(value: Int) {
         val newNode = Node(value)
         newNode.next = head
         head = newNode
+
+        size++;
         // head -> 1st node - >2nd Node
         // newNode -> head -> 1st node - > 2nd node
         // newHEAD - >1st node -> 2nd node .... so one
@@ -25,8 +28,10 @@ class SingleLinkedList {
         println("null")
     }
 
-    fun addLast(value: Int?) {
+    fun addLast(value: Int) {
+
         val newNode = Node(value)
+        size++;
         if (head == null) {
             head = newNode
             return
@@ -41,7 +46,7 @@ class SingleLinkedList {
 
     }
 
-    fun deleteByValue(value: Int?) {
+    fun deleteByValue(value: Int) {
         // head -> 2nd node - > 3rd node --- my prev ---" here i am" ---- my next
         while (head?.value == value) {
             head = head?.next
@@ -52,6 +57,7 @@ class SingleLinkedList {
             // if found
             if (target?.value == value) {
                 curr.next = target?.next
+                size--;
             }
             curr = curr.next
         }
