@@ -1,4 +1,4 @@
-package org.example.app.DSA
+package org.example.app.DSA.LinkedList
 
 
 private fun SingleLinkedList.reverseSecondHalf(): Node? {
